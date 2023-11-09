@@ -1,0 +1,117 @@
+<!--ETIQUETA DE INICIO Y FIN DE ENLACE-->
+<!-- <a></a> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo enlaces y formularios </title>
+</head>
+<body>
+    <h1 id = "título-principal">Aprendiendo enlaces y formularios HTML</h1>
+    <h2>Enlaces</h2>
+    <h3>Enlaces externos</h3>
+    <p>Para crear cualquier enlace usamos la etiqueta a</p>
+    <p>Los enlaces externos dirigen a otros sitios web que no pertenecen al mio </p>
+    <h4>Ejemplos</h4>
+    <!--href es el atributo que sirve para poner el enlace que quiero dejar en mi sitio web-->
+    <a href="https://aulasvirtuales.udistrital.edu.co/mod/forum/discuss.php?d=46991">Click para ingresar al curso de backend UD</a>
+    <br>
+
+    <!---Con la etiqueta target el enlace se va a abrir en una pagina diferente a la pagina principal-->
+    <a href="https://www.konradlorenz.edu.co/programas/matematicas/" target="_blank">matemáticas konrad lorenz</a>
+    <br>
+    <h5>Temario del curso</h5>
+    <ol>
+        <li>
+            <a href="1.https://www.konradlorenz.edu.co/programas/matematicas/">Curso calculo multivariable </a>
+        </li>
+        
+    </ol>
+    <a href="https://www.konradlorenz.edu.co/programas/matematicas/">Curso calculo multivariable</a>
+    <h3>Enlaces internos</h3>
+        <a href="#título-principal">volver al inicio</a>
+        <br>
+        
+        <!--CREAR IMAGEN CON ENLACE-->
+        <a href="#título-principal">
+            <img src="img/icono-regresar.png">
+        </a>
+       
+
+<!--ETIQUETAS DE FORMULARIOS-->
+
+<!--<form> Etiqueta que abre el formulario</form>
+<label>Representa una etiqueta</label>
+<textarea>Area de texto</textarea>
+<select>Menú de opciones </select>
+<option>Elemento utilizado para representar un item</option>
+-->
+
+
+<!--ETIQUETAS DE FORMULARIOS INPUT-->
+
+<!--
+<input type="text">
+<input type="password">
+<input type="number">
+<input type="image">
+<input type="date">
+<input type="button">
+<input type="checkbox">
+<input type="radio">
+<input type="file">
+<input type="color">
+
+-->
+
+
+<h2>FORMULARIO</h2>
+    <form>
+        <label for="">Nombre</label>
+        <!--En el atributo type se especifica el tipo de entrada o datos que va a ingresar-->
+        <input type="text">
+
+        <br>
+        <!-- El for que va dentro del label es para enviar información y el get para capturar -->
+        <label for="">Edad</label>
+        <input type="number">
+        <br>
+        <label for="">Contraseña</label>
+        <input type="password">
+        <br>
+        <label for="">email</label>
+        <input type="email" >
+        <br>
+        <label for="">correo </label>
+        <input type="email" placeholder="@gmail.com " required>
+        <br>
+        <!-- EL TIPO SUBMIT CREA UNA ENTRADA PARA PODER ENVIAR LA INFORMACION  -->
+        <input type="submit">
+        <br>
+        
+        <!-- EJEMPLO DE RECUADRO ACPETO LOS TERMINOS -->
+        <label for="">Acepto los términos</label>
+        <INPUT type="checkbox">
+        <br>
+        <!-- AL BOTON DE SUBMIT LE PODEMOS CAMBIAR EL MENSAJE DE LA SIGUIENTE FORMA -->
+        <input type="submit" value="Registrate!">
+        <br>
+        <label for="">Tipo de documento</label>
+        <select>
+            <!-- EL VALOR DE VALUE ES EL ORDEN O EL VALOR CON EL QUE SE VA A ALMACENAR EN LA BASE DE DATOS DICHO VALOR -->
+            <option value="1">Registro civil</option>
+            <option value="2">Tarjeta de identidad</option>
+            <option value="3">Cedula de ciudadania</option>
+            <br>
+            <textarea cols="30"  rows="10" 
+            placeholder="Ingresa las razones para dar el curso"></textarea>
+        </select>
+
+    </form>
+
+
+
+<!-- MINUTO 54:00:00 -->
+</body>
+</html>

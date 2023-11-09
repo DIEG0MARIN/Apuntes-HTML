@@ -1,0 +1,98 @@
+<!--HTML SEMANTICO -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clase4</title>
+    <!-- Otra forma de implementar css es con la etiqueta style antes del body -->
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        li{
+            background-color: green;
+        }
+        article{
+            background-color: blue;
+
+        }
+        div{
+            background-color: pink;
+        }
+       section{
+        background-color: yellow;
+       }
+
+       /* Para seleccionar un ID se utiliza el simbolo de #*/
+       #contacto{
+        background-color: red;
+       }
+       /* Para seleccionar una clase se utiliza el punto */
+       .subtitulo{
+        background-color: orange;
+       }
+       div p{
+        background-color: lightgreen;
+       }
+    </style>
+</head>
+<body>
+    <!-- el header esta predefinido para que guarde información principal del sitio , como   logo del sitio web, nombre y meú de navegación -->
+    <header>
+        <h1>Etiquetas semánticas y selectores de HTML</h1>
+        <!-- PARA LOS MENUS DE NAVEGACIÓN UTILIZO LA ETIQUETA NAV -->
+        <NAV>
+            <!-- Se puede agregar estilos dentro de la misma etiqueta -->
+            <ul style="background-color: aqua;">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#"> Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </NAV>
+
+    </header>
+    <main>
+        <!-- DENTRO DE MAIN VA TODO EL CONTENIDO PRINCIPAL DE LA PAGINA -->
+        <section id="Inicio">
+            <!--Section define una sección del sitio web que cumple un proposito especifico -->
+            <h2 class="subtitulo">Inicio</h2>
+            <h3>Selectores</h3>
+            <h2 class="subtitulo">ID</h2>
+            <p>Es una identificación única a mis elementos HTML. NO SE PUEDEN REPETIR EN TODO EL DOCUMENTO </p>
+
+            <H2>Clases</H2>
+            <p>No es único y su caracteristica es que se pueden repetir a muchos elementos</p>
+
+        </section>
+        <section id="Noticias">
+            <h2 class="subtitulo">Noticias</h2>
+                <article>
+                    <h3>Título de la noticia</h3>
+                    <div>
+                
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum neque facilis aliquid debitis aliquam, impedit, rem fugit dolorem quis officiis dignissimos natus eius, quo reiciendis tempore a architecto cupiditate recusandae.</p>
+                    <!-- UN DIV ES UNA ETIQUETA SIN VALOR SEMÁNTICO  -->
+                    <img src="img/icons8-regreso-100.png">
+                    
+                    </div>
+                    
+                </article>
+        </section>
+        <section id="Contacto">
+            <h2 class="subtitulo">Contacto</h2>
+            <form action="">
+                <label for="">nombre</label>
+                <input type="text"> <br>
+                <label for="">Correo</label>
+                <input type="email">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        Todos los derechos reservados por diego marin
+    </footer>
+</body>
+</html>

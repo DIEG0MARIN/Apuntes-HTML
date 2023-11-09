@@ -1,0 +1,53 @@
+<!-- ACTIVIDAD : REALIZAR UN FORMULARIO DE INICIO DE SESION, DONDE SE SUGIERA LLENAR CADA ESPACIO Y SE ENVIE UN MENSAJE AL USUARIO QUE SE DEBE DILIGENCIAR DICHO CAMPO-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <center> 
+            <label for="">Nombre y apellido</label>
+            <Br>
+            <input type="text" required>
+            <br>
+            <label for="">Correo electronico</label>
+            <br>
+            <input type="email" placeholder="@gmail.com" required>
+            <br>
+
+            <label for="">Número de teléfono</label>
+            <br>
+            <input type="number" placeholder="xxx-xxx-xx-xx" required>
+            
+            <br>
+            <label for="">Mensaje</label>
+            <br>
+            <textarea cols="70" rows="10" required></textarea>
+
+            <br>
+            <label>¿En que horario le  gustaria ser contactado?</label>
+            <br>
+            <select>
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>Noche</option>
+            </select>
+            <br>
+            <legend>¿En que horario le gustaria que lo contactemos?</legend>
+            <select>
+                <option>email</option>
+                <option>Teléfono</option>
+            </select>
+           <br>
+           <label for=""><input type="checkbox">¿Le gustaría recibir novedades?</label>
+           <br>
+           <input type="submit" value="ENVIAR">
+       </center>
+
+
+    </form>
+</body>
+</html>

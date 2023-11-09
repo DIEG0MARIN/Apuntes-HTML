@@ -1,0 +1,16 @@
+body{
+    background-color: lightblue;
+}
+
+
+
+.titulo-principal{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+a{
+    text-decoration: underline;
+}
